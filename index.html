@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FarmaLink - Presentación del Proyecto</title>
-  <link rel="stylesheet" href="styles_solution.css">
-  <link rel="stylesheet" href="styles_idetity.css">
+  <link rel="stylesheet" href="styles/styles_solution.css">
+  <link rel="stylesheet" href="styles/styles_idetity.css">
+  <link rel="stylesheet" href="styles/styles_problem.css">
+  <link rel="stylesheet" href="styles/styles_business_group.css">
+  <link rel="shortcut icon" href="images/Logo_Farmalink.png" type="image/x-icon">
+
 
 </head>
 
@@ -16,28 +20,55 @@
     <nav class="navbar">
       <div class="container">
         <div class="logo">
-          <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
-            <rect width="40" height="40" rx="8" fill="#4F46E5" />
-            <path d="M20 10v20M10 20h20" stroke="white" stroke-width="3" stroke-linecap="round" />
-          </svg>
+          <img src="images/Logo_Farmalink.png" width="60" height="60" />
           <span class="logo-text">FarmaLink</span>
         </div>
+
+        <!-- Checkbox oculto para controlar el menú -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <!-- Menú principal (desktop) -->
         <ul class="nav-menu">
+          <li><a href="#equipo">Integrantes del Proyecto</a></li>
           <li><a href="#introduccion">Introducción</a></li>
           <li><a href="#justificacion">Justificación</a></li>
+          <li><a href="#grupo-empresarial">Grupo Empresarial</a></li>
+          <li><a href="#identidad">Identidad</a></li>
           <li><a href="#solucion">Solución</a></li>
         </ul>
+
+        <!-- Botón hamburguesa (label para el checkbox) -->
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Menú desplegable (hamburguesa) -->
+        <div class="mobile-menu">
+          <ul class="mobile-menu-list">
+            <li><a href="#equipo">Integrantes del Proyecto</a></li>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#justificacion">Justificación</a></li>
+            <li><a href="#grupo-empresarial">Grupo Empresarial</a></li>
+            <li><a href="#identidad">Identidad</a></li>
+            <li><a href="#solucion">Solución</a></li>
+          </ul>
+        </div>
+
+        <!-- Overlay -->
+        <label for="menu-toggle" class="mobile-menu-overlay"></label>
       </div>
     </nav>
   </header>
-
   <!-- Hero Nuevo -->
   <section class="hero hero-new">
     <div class="container hero-new-container">
       <div class="hero-new-text">
         <div class="hero-eyebrow">Plataforma inteligente de salud</div>
         <h1 class="hero-title hero-title-new">Encuentra medicamentos al mejor precio en tiempo real</h1>
-        <p class="hero-subtitle hero-subtitle-new">Compara precios entre farmacias, verifica disponibilidad y recibe recomendaciones inteligentes para tomar decisiones informadas y ahorrar tiempo y dinero.</p>
+        <p class="hero-subtitle hero-subtitle-new">Compara precios entre farmacias, verifica disponibilidad y recibe
+          recomendaciones inteligentes para tomar decisiones informadas y ahorrar tiempo y dinero.</p>
         <div class="hero-badges">
           <span class="badge">Precios en Tiempo Real</span>
           <span class="badge">Recomendaciones con IA</span>
@@ -46,7 +77,61 @@
       </div>
       <div class="hero-new-visual">
         <div class="hero-chart-card">
-          <img src="images/grafico_precios.png" alt="Gráfico de variación de precios entre farmacias" class="hero-chart-img" />
+          <img src="images/grafico_precios.png" alt="Gráfico de variación de precios entre farmacias"
+            class="hero-chart-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo -->
+  <section id="equipo" class="team-section">
+    <div class="container">
+      <div class="team-header">
+        <h2 class="section-title">Integrantes del Proyecto</h2>
+        <p class="section-intro">El equipo detrás de FarmaLink, comprometido con mejorar el acceso a medicamentos
+          mediante tecnología innovadora.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="40" fill="#4F46E5" />
+              <text x="40" y="50" font-size="32" fill="white" text-anchor="middle" font-weight="600">HD</text>
+            </svg>
+          </div>
+          <h3 class="team-name">Haiver Dario Daza Cerdas</h3>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="40" fill="#10B981" />
+              <text x="40" y="50" font-size="32" fill="white" text-anchor="middle" font-weight="600">SM</text>
+            </svg>
+          </div>
+          <h3 class="team-name">Sergio Andrés Merchán Rozo</h3>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="40" fill="#F59E0B" />
+              <text x="40" y="50" font-size="32" fill="white" text-anchor="middle" font-weight="600">EU</text>
+            </svg>
+          </div>
+          <h3 class="team-name">Eduar Fabián Ultengo Pedraza</h3>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="40" fill="#8B5CF6" />
+              <text x="40" y="50" font-size="32" fill="white" text-anchor="middle" font-weight="600">DG</text>
+            </svg>
+          </div>
+          <h3 class="team-name">Daniel Leonardo González Torres</h3>
         </div>
       </div>
     </div>
@@ -62,8 +147,12 @@
         </div>
         <div class="intro-content-col">
           <h2 class="intro-title">Un problema real que afecta a todos</h2>
-          <p class="intro-text">El acceso a medicamentos sigue siendo un desafío debido a la variabilidad de precios, la falta de información actualizada y la ausencia de herramientas que centralicen datos de disponibilidad. Los usuarios suelen perder tiempo y dinero al no contar con información clara y en tiempo real.</p>
-          <p class="intro-text">Este proyecto propone una plataforma web inteligente que permita buscar medicamentos, comparar precios, ubicar farmacias cercanas y ofrecer recomendaciones personalizadas mediante inteligencia artificial.</p>
+          <p class="intro-text">El acceso a medicamentos sigue siendo un desafío debido a la variabilidad de precios, la
+            falta de información actualizada y la ausencia de herramientas que centralicen datos de disponibilidad. Los
+            usuarios suelen perder tiempo y dinero al no contar con información clara y en tiempo real.</p>
+          <p class="intro-text">Este proyecto propone una plataforma web inteligente que permita buscar medicamentos,
+            comparar precios, ubicar farmacias cercanas y ofrecer recomendaciones personalizadas mediante inteligencia
+            artificial.</p>
           <div class="intro-stats">
             <div class="intro-stat">
               <span class="intro-stat-value">4x</span>
@@ -87,106 +176,290 @@
         <h2 class="just-title">Justificación del Proyecto</h2>
       </div>
       <div class="just-grid">
-        <div class="just-card just-card-highlight">
+        <div class="just-card ">
           <div class="just-icon">💡</div>
           <h3>El problema del mercado</h3>
-          <p>La falta de transparencia en el mercado farmacéutico genera gastos innecesarios y dificultades de acceso para los usuarios. Centralizar información de precios y disponibilidad en una plataforma digital reduce la asimetría de información y mejora la toma de decisiones.</p>
+          <p>La falta de transparencia en el mercado farmacéutico genera gastos innecesarios y dificultades de acceso
+            para los usuarios. Centralizar información de precios y disponibilidad en una plataforma digital reduce la
+            asimetría de información y mejora la toma de decisiones.</p>
         </div>
         <div class="just-card">
           <div class="just-icon">🚀</div>
           <h3>La solución tecnológica</h3>
-          <p>Esta solución tecnológica no solo optimiza el proceso de compra, sino que también aporta eficiencia, ahorro económico y mayor accesibilidad en el sector salud.</p>
+          <p>Esta solución tecnológica no solo optimiza el proceso de compra, sino que también aporta eficiencia, ahorro
+            económico y mayor accesibilidad en el sector salud.</p>
         </div>
         <div class="just-card">
           <div class="just-icon">🎯</div>
           <h3>Impacto directo</h3>
-          <p>Al conectar usuarios con la información correcta en el momento indicado, FarmaLink transforma la manera en que las personas acceden a medicamentos, priorizando su bienestar y economía.</p>
+          <p>Al conectar usuarios con la información correcta en el momento indicado, FarmaLink transforma la manera en
+            que las personas acceden a medicamentos, priorizando su bienestar y economía.</p>
         </div>
       </div>
     </div>
   </section>
 
- <!-- Misión, Visión y Objetivos -->
-<section id="identidad" class="identity">
-  <div class="container">
-    <h2 class="section-title">Misión, Visión y Objetivos</h2>
-    <p class="section-intro">
-      FarmaLink nace como una solución tecnológica enfocada en mejorar el acceso a medicamentos,
-      optimizando tiempo, costo y toma de decisiones para los usuarios.
-    </p>
+  <!-- PARTE 2: Grupo Empresarial, Nombre y Logotipo -->
+  <section id="grupo-empresarial" class="business-group">
+    <div class="container">
+      <h2 class="section-title">Grupo Empresarial e Identidad Visual</h2>
+      <p class="section-intro">
+        FarmaLink Solutions nace como un grupo empresarial comprometido con la innovación tecnológica
+        y el acceso democratizado a información farmacéutica.
+      </p>
 
-    <div class="identity-grid">
-
-      <!-- MISIÓN -->
-      <div class="identity-item">
-        <h3 class="identity-title">Misión</h3>
-
-        <div class="flip-card">
-          <div class="flip-card-inner">
-
-            <div class="flip-card-front">
-              <img src="images/icons/mission.png" alt="Misión">
-            </div>
-
-            <div class="flip-card-back">
-              <p>
-                Facilitar el acceso oportuno, transparente y eficiente a los medicamentos
-                mediante una plataforma web inteligente.
-              </p>
-            </div>
-
+      <!-- Significado del Nombre -->
+      <div class="meaning-section">
+        <h3 class="subsection-title">Significado del Nombre</h3>
+        <div class="meaning-grid">
+          <div class="meaning-card">
+            <div class="meaning-icon">💊</div>
+            <h4>Farma</h4>
+            <p>Referencia directa al sector farmacéutico y de salud, estableciendo claramente nuestro ámbito de acción.
+            </p>
+          </div>
+          <div class="meaning-card">
+            <div class="meaning-icon">🔗</div>
+            <h4>Link</h4>
+            <p>Conexión y vínculo entre usuarios, farmacias e información, simbolizando la red que creamos.</p>
           </div>
         </div>
       </div>
 
-      <!-- VISIÓN -->
-      <div class="identity-item">
-        <h3 class="identity-title">Visión</h3>
-
-        <div class="flip-card">
-          <div class="flip-card-inner">
-
-            <div class="flip-card-front">
-              <img src="images/icons/vision.png" alt="Visión">
-            </div>
-
-            <div class="flip-card-back">
-              <p>
-                Ser una plataforma líder en optimización del acceso a medicamentos,
-                impulsada por innovación tecnológica e inteligencia artificial.
-              </p>
-            </div>
-
+      <!-- Valores del Grupo -->
+      <div class="values-section">
+        <h3 class="subsection-title">Valores del Grupo Empresarial</h3>
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-number">01</div>
+            <h4>Transparencia</h4>
+            <p>Información clara, verificable y accesible sobre precios y disponibilidad de medicamentos.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-number">02</div>
+            <h4>Accesibilidad</h4>
+            <p>Facilitar el acceso a medicamentos al mejor precio para todos los usuarios, sin barreras.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-number">03</div>
+            <h4>Innovación</h4>
+            <p>Uso de inteligencia artificial y tecnología de vanguardia para mejorar continuamente.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-number">04</div>
+            <h4>Confianza</h4>
+            <p>Datos verificados en tiempo real de fuentes confiables para decisiones informadas.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-number">05</div>
+            <h4>Compromiso Social</h4>
+            <p>Contribuir al bienestar de la comunidad optimizando el gasto en salud de las familias.</p>
           </div>
         </div>
       </div>
 
-      <!-- OBJETIVOS -->
-      <div class="identity-item">
-        <h3 class="identity-title">Objetivos</h3>
+      <!-- Logo e Identidad Visual -->
+      <div class="logo-identity-section">
+        <h3 class="subsection-title">Logo e Identidad Visual</h3>
 
-        <div class="flip-card">
-          <div class="flip-card-inner">
+        <div class="logo-showcase">
+          <div class="logo-display">
+            <img src="images/Logo_Farmalink.png" alt="Logo FarmaLink" class="logo-main-image">
+            <p class="logo-label">Logotipo Principal</p>
+          </div>
 
-            <div class="flip-card-front">
-              <img src="images/icons/goals.png" alt="Objetivos">
+          <div class="logo-concept">
+            <h4>Concepto del Logotipo</h4>
+            <div class="concept-points">
+              <div class="concept-item">
+                <span class="concept-bullet">●</span>
+                <p><strong>Lupa con píldora:</strong> Elemento central que representa la búsqueda y comparación de
+                  medicamentos, facilitando el acceso a información farmacéutica.</p>
+              </div>
+              <div class="concept-item">
+                <span class="concept-bullet">●</span>
+                <p><strong>Electrocardiograma:</strong> Línea vital que simboliza la salud y el monitoreo constante,
+                  reforzando el compromiso con el bienestar del usuario.</p>
+              </div>
+              <div class="concept-item">
+                <span class="concept-bullet">●</span>
+                <p><strong>Circuitos tecnológicos:</strong> Líneas de conexión que representan la red digital, la
+                  tecnología y la interconexión entre farmacias y usuarios.</p>
+              </div>
+              <div class="concept-item">
+                <span class="concept-bullet">●</span>
+                <p><strong>Tipografía bicolor:</strong> "Farma" en verde (salud, bienestar) y "Link" en azul
+                  (tecnología, confianza), unificando el concepto salud-tecnología.</p>
+              </div>
+              <div class="concept-item">
+                <span class="concept-bullet">●</span>
+                <p><strong>Tagline funcional:</strong> "Encuentra. Compara. Ahorra." resume las tres acciones clave que
+                  ofrece la plataforma al usuario.</p>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div class="flip-card-back">
-              <ul>
-                <li>Comparar precios en tiempo real.</li>
-                <li>Optimizar la búsqueda de farmacias.</li>
-                <li>Recomendar alternativas con IA.</li>
-              </ul>
+        <!-- Paleta de Colores -->
+        <div class="color-palette">
+          <h4>Paleta de Colores</h4>
+          <div class="color-swatches">
+            <div class="color-swatch">
+              <div class="color-box" style="background-color: #66B82E;"></div>
+              <p class="color-name">Verde Farma</p>
+              <p class="color-hex">#66B82E</p>
+              <p class="color-meaning">Salud, naturaleza, bienestar y vitalidad</p>
             </div>
+            <div class="color-swatch">
+              <div class="color-box" style="background-color: #0B7DB8;"></div>
+              <p class="color-name">Azul Link</p>
+              <p class="color-hex">#0B7DB8</p>
+              <p class="color-meaning">Tecnología, confianza y conexión digital</p>
+            </div>
+            <div class="color-swatch">
+              <div class="color-box" style="background-color: #00A896;"></div>
+              <p class="color-name">Turquesa Acento</p>
+              <p class="color-hex">#00A896</p>
+              <p class="color-meaning">Innovación, frescura y modernidad</p>
+            </div>
+            <div class="color-swatch">
+              <div class="color-box" style="background-color: #F59E0B;"></div>
+              <p class="color-name">Naranja Energía</p>
+              <p class="color-hex">#F59E0B</p>
+              <p class="color-meaning">Dinamismo, ahorro y call-to-action</p>
+            </div>
+            <div class="color-swatch">
+              <div class="color-box" style="background-color: #6B7280;"></div>
+              <p class="color-name">Gris Neutro</p>
+              <p class="color-hex">#6B7280</p>
+              <p class="color-meaning">Equilibrio, profesionalismo y legibilidad</p>
+            </div>
+          </div>
+        </div>
 
+        <!-- Tipografía -->
+        <div class="typography-section">
+          <h4>Tipografía Corporativa</h4>
+          <div class="typography-grid">
+            <div class="typography-item">
+              <p class="font-display"
+                style="font-family: 'Arial', sans-serif; font-weight: 700; font-size: 32px; color: #66B82E;">Farma<span
+                  style="color: #0B7DB8;">Link</span></p>
+              <p class="font-usage"><strong>Uso:</strong> Logotipo principal - Arial Bold, bicolor (Verde #66B82E + Azul
+                #0B7DB8)</p>
+              <p class="font-features">Sans-serif, moderna, legible, accesible</p>
+            </div>
+            <div class="typography-item">
+              <p class="font-display"
+                style="font-family: 'Arial', sans-serif; font-weight: 400; font-size: 16px; color: #6B7280;">Encuentra.
+                Compara. Ahorra.</p>
+              <p class="font-usage"><strong>Uso:</strong> Tagline - Arial Regular, color gris neutro</p>
+              <p class="font-features">Clara, directa, memorable</p>
+            </div>
+            <div class="typography-item">
+              <p class="font-display"
+                style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 600; font-size: 24px;">
+                Títulos y Encabezados</p>
+              <p class="font-usage"><strong>Uso:</strong> Sistema (Inter/Segoe UI) - SemiBold para títulos de sección
+              </p>
+              <p class="font-features">Profesional, tecnológica, web-optimizada</p>
+            </div>
+            <div class="typography-item">
+              <p class="font-display"
+                style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; font-size: 16px;">
+                Texto de cuerpo y contenido general</p>
+              <p class="font-usage"><strong>Uso:</strong> Sistema (Inter/Segoe UI) - Regular para párrafos y
+                descripciones</p>
+              <p class="font-features">Legible, accesible, responsive</p>
+            </div>
           </div>
         </div>
       </div>
 
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Misión, Visión y Objetivos -->
+  <section id="identidad" class="identity">
+    <div class="container">
+      <h2 class="section-title">Misión, Visión y Objetivos</h2>
+      <p class="section-intro">
+        FarmaLink nace como una solución tecnológica enfocada en mejorar el acceso a medicamentos,
+        optimizando tiempo, costo y toma de decisiones para los usuarios.
+      </p>
+
+      <div class="identity-grid">
+
+        <!-- MISIÓN -->
+        <div class="identity-item">
+          <h3 class="identity-title">Misión</h3>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+
+              <div class="flip-card-front">
+                <img src="images/icons/mission.png" alt="Misión">
+              </div>
+
+              <div class="flip-card-back">
+                <p>
+                  Facilitar el acceso oportuno, transparente y eficiente a los medicamentos
+                  mediante una plataforma web inteligente.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- VISIÓN -->
+        <div class="identity-item">
+          <h3 class="identity-title">Visión</h3>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+
+              <div class="flip-card-front">
+                <img src="images/icons/vision.png" alt="Visión">
+              </div>
+
+              <div class="flip-card-back">
+                <p>
+                  Ser una plataforma líder en optimización del acceso a medicamentos,
+                  impulsada por innovación tecnológica e inteligencia artificial.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- OBJETIVOS -->
+        <div class="identity-item">
+          <h3 class="identity-title">Objetivos</h3>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+
+              <div class="flip-card-front">
+                <img src="images/icons/goals.png" alt="Objetivos">
+              </div>
+
+              <div class="flip-card-back">
+                <ul>
+                  <li>Comparar precios en tiempo real.</li>
+                  <li>Optimizar la búsqueda de farmacias.</li>
+                  <li>Recomendar alternativas con IA.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
 
@@ -355,18 +628,90 @@
   </section>
 
   <!-- Footer -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
-            <rect width="40" height="40" rx="8" fill="#4F46E5" />
-            <path d="M20 10v20M10 20h20" stroke="white" stroke-width="3" stroke-linecap="round" />
-          </svg>
-          <span>FarmaLink</span>
+      <div class="footer-grid">
+
+        <!-- Columna 1: Logo y Descripción -->
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <img src="images/Logo_Farmalink.png" width="48" height="48" alt="FarmaLink Logo" />
+            <span>FarmaLink</span>
+          </div>
+          <p class="footer-description">
+            Plataforma inteligente que facilita el acceso a medicamentos mediante
+            comparación de precios en tiempo real y recomendaciones personalizadas con IA.
+          </p>
+          <div class="footer-tagline">Encuentra. Compara. Ahorra.</div>
         </div>
-        <p class="footer-text">Proyecto de plataforma web inteligente con arquitectura de microservicios</p>
-        <p class="footer-tech">React • TypeScript • Node.js • Express.js • Docker • Ngrok</p>
+
+        <!-- Columna 2: Navegación Rápida -->
+        <div class="footer-col">
+          <h4 class="footer-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#justificacion">Justificación</a></li>
+            <li><a href="#identidad">Identidad</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Proyecto -->
+        <div class="footer-col">
+          <h4 class="footer-title">Proyecto</h4>
+          <ul class="footer-links">
+            <li><a href="#grupo-empresarial">Grupo Empresarial</a></li>
+            <li><a href="#solucion">Solución</a></li>
+            <li><a href="#funcionalidades">Funcionalidades</a></li>
+            <li><a href="#tecnologia">Tecnología</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Stack Tecnológico -->
+        <div class="footer-col">
+          <h4 class="footer-title">Stack Tecnológico</h4>
+          <div class="footer-tech-stack">
+            <div class="tech-badge">
+              <span class="tech-icon">⚛️</span>
+              <span>React</span>
+            </div>
+            <div class="tech-badge">
+              <span class="tech-icon">📘</span>
+              <span>TypeScript</span>
+            </div>
+            <div class="tech-badge">
+              <span class="tech-icon">🟢</span>
+              <span>Node.js</span>
+            </div>
+            <div class="tech-badge">
+              <span class="tech-icon">🚂</span>
+              <span>Express.js</span>
+            </div>
+            <div class="tech-badge">
+              <span class="tech-icon">🐳</span>
+              <span>Docker</span>
+            </div>
+            <div class="tech-badge">
+              <span class="tech-icon">🌐</span>
+              <span>Ngrok</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Separador -->
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2025 FarmaLink Solutions. Proyecto académico de arquitectura de microservicios.
+        </p>
+        <div class="footer-meta">
+          <span>Hecho con 💚 por el equipo FarmaLink</span>
+        </div>
       </div>
     </div>
   </footer>

@@ -1,0 +1,486 @@
+/* ===============================================
+   PARTE 2: GRUPO EMPRESARIAL E IDENTIDAD VISUAL
+   styles_business_group.css
+================================================ */
+
+/* Variables específicas para la sección */
+:root {
+    --bg-business: #FAFBFC;
+    --card-bg: #FFFFFF;
+    --accent-light: #EEF2FF;
+}
+
+/* Sección Principal */
+.business-group {
+    background-color: var(--bg-business);
+    padding: 80px 0;
+}
+
+/* ===============================================
+   NOMBRE DEL GRUPO EMPRESARIAL
+================================================ */
+
+.business-name-block {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    padding: 48px;
+    text-align: center;
+    margin: 48px 0;
+    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.15);
+}
+
+.business-name-content h3 {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+}
+
+.business-tagline {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* ===============================================
+   SIGNIFICADO DEL NOMBRE
+================================================ */
+
+.meaning-section {
+    margin: 64px 0;
+}
+
+.subsection-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+}
+
+.meaning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.meaning-card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meaning-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.meaning-icon {
+    font-size: 56px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.meaning-card h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.meaning-card p {
+    font-size: 16px;
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+/* ===============================================
+   VALORES DEL GRUPO
+================================================ */
+
+.values-section {
+    margin: 64px 0;
+    padding: 48px;
+    background-color: var(--accent-light);
+    border-radius: 20px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 28px;
+    margin-top: 32px;
+}
+
+.value-item {
+    background-color: white;
+    border-radius: 12px;
+    padding: 28px;
+    border-left: 4px solid var(--primary);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.value-item:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+}
+
+.value-number {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.value-item h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    font-size: 15px;
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+/* ===============================================
+   LOGO E IDENTIDAD VISUAL
+================================================ */
+
+.logo-identity-section {
+    margin: 64px 0;
+}
+
+.logo-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 48px;
+    margin: 40px 0 60px;
+    align-items: start;
+}
+
+/* Display del Logo */
+.logo-display {
+    background-color: white;
+    border-radius: 16px;
+    padding: 48px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border);
+}
+
+.logo-display svg {
+    margin: 0 auto 24px;
+    display: block;
+}
+
+.logo-main-image {
+    width: 280px;
+    height: auto;
+    margin: 0 auto 24px;
+    display: block;
+}
+
+.logo-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-medium);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Concepto del Logo */
+.logo-concept {
+    background-color: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: var(--shadow-sm);
+}
+
+.logo-concept h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+}
+
+.concept-points {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.concept-item {
+    display: flex;
+    gap: 16px;
+    align-items: start;
+}
+
+.concept-bullet {
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+    flex-shrink: 0;
+}
+
+.concept-item p {
+    font-size: 15px;
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+.concept-item strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+/* ===============================================
+   PALETA DE COLORES
+================================================ */
+
+.color-palette {
+    background-color: white;
+    border-radius: 16px;
+    padding: 40px;
+    margin: 48px 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.color-palette h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.color-swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+.color-swatch {
+    text-align: center;
+}
+
+.color-box {
+    width: 100%;
+    height: 120px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.color-swatch:hover .color-box {
+    transform: scale(1.05);
+}
+
+.color-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.color-hex {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-medium);
+    font-family: 'Courier New', monospace;
+    margin-bottom: 8px;
+}
+
+.color-meaning {
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+/* ===============================================
+   TIPOGRAFÍA
+================================================ */
+
+.typography-section {
+    background-color: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: var(--shadow-sm);
+}
+
+.typography-section h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.typography-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.typography-item {
+    padding: 24px;
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    border: 2px solid var(--border);
+}
+
+.font-display {
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.font-usage {
+    font-size: 14px;
+    color: var(--text-medium);
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.font-features {
+    font-size: 13px;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* ===============================================
+   RESPONSIVE DESIGN
+================================================ */
+
+@media (max-width: 968px) {
+    .logo-showcase {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .business-name-block {
+        padding: 32px 24px;
+    }
+
+    .business-name-content h3 {
+        font-size: 36px;
+    }
+
+    .business-tagline {
+        font-size: 18px;
+    }
+
+    .subsection-title {
+        font-size: 24px;
+    }
+
+    .meaning-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .values-section {
+        padding: 32px 24px;
+    }
+
+    .color-swatches {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .typography-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .business-name-content h3 {
+        font-size: 28px;
+    }
+
+    .meaning-icon {
+        font-size: 48px;
+    }
+
+    .color-swatches {
+        grid-template-columns: 1fr;
+    }
+
+    .color-box {
+        height: 100px;
+    }
+
+    .logo-display {
+        padding: 32px 20px;
+    }
+
+    .logo-concept,
+    .color-palette,
+    .typography-section {
+        padding: 24px 20px;
+    }
+}
+
+/* ===============================================
+   ANIMACIONES
+================================================ */
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.meaning-card,
+.value-item,
+.logo-display,
+.logo-concept,
+.color-swatch,
+.typography-item {
+    animation: slideInUp 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.meaning-card:nth-child(1) { animation-delay: 0.1s; }
+.meaning-card:nth-child(2) { animation-delay: 0.2s; }
+.meaning-card:nth-child(3) { animation-delay: 0.3s; }
+
+.value-item:nth-child(1) { animation-delay: 0.1s; }
+.value-item:nth-child(2) { animation-delay: 0.2s; }
+.value-item:nth-child(3) { animation-delay: 0.3s; }
+.value-item:nth-child(4) { animation-delay: 0.4s; }
+.value-item:nth-child(5) { animation-delay: 0.5s; }
+
+/* ===============================================
+   ACCESIBILIDAD
+================================================ */
+
+.meaning-card:focus,
+.value-item:focus,
+.color-swatch:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
+}
+
+/* Mejora de contraste en hover */
+.meaning-card:hover h4,
+.value-item:hover h4 {
+    color: var(--primary-dark);
+}
